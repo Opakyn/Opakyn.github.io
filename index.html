@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>你的Opakyn</title>
+    <!-- 网页图标 -->
+    <link rel="icon" href="https://img.picui.cn/free/2025/06/20/6854d89c8cc10.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://img.picui.cn/free/2025/06/20/6854d89c8cc10.png" type="image/x-icon">
     <!-- 引入Font Awesome图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
             color: #e6e6e6;
             margin: 0;
             padding: 0;
@@ -17,6 +19,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            /* 背景图片设置 */
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(22, 33, 62, 0.8)), 
+                        url('https://img.picui.cn/free/2025/06/20/6854d861dd1b1.jpg') center/cover no-repeat fixed;
         }
         
         .container {
@@ -28,6 +33,24 @@
             max-width: 600px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #64f5f5;
+            object-fit: cover;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header {
+            margin-top: 70px;
         }
         
         h1 {
@@ -104,8 +127,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Opakyn</h1>
-        <div class="subtitle">Member of BA二うぼうAzureMiraclesCo.</div>
+        <!-- 头像图片 -->
+        <img src="https://img.picui.cn/free/2025/06/20/6854d89c8cc10.png" alt="Opakyn头像" class="avatar">
+        
+        <div class="header">
+            <h1>Opakyn</h1>
+            <div class="subtitle">Member of BA二うぼうAzureMiraclesCo.</div>
+        </div>
         
         <div class="info-section">
             <div class="info-title">📍Basic</div>
@@ -117,7 +145,7 @@
         <div class="info-section">
             <div class="info-title">🎮Games</div>
             <div class="info-content">
-                LOL 和 VALORANT Player<br>
+                LOL & VALORANT Player<br>
                 电子竞技爱好者 | 正在从事碧蓝档案社区搭建
             </div>
         </div>
