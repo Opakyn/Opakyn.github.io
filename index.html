@@ -3,116 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opakyn个人站</title>
+    <title>Opakyn的个人主页</title>
+    <!-- 引入Font Awesome图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            line-height: 1.8;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        。profile {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
-            gap: 20px;
+            justify-content: center;
+            align-items: center;
         }
-        。header {
-            text-align: center;
-            margin-bottom: 20px;
+        
+        .container {
+            background-color: rgba(30, 30, 46, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
+        
         h1 {
+            color: #64f5f5;
+            text-align: center;
+            margin-bottom: 5px;
             font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(100, 245, 245, 0.3);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #a1a1a1;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .info-section {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .info-title {
+            color: #64f5f5;
+            font-size: 1.2em;
             margin-bottom: 10px;
-            color: #222;
         }
-        。bio {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            font-size: 16px;
+        
+        .info-content {
+            line-height: 1.6;
         }
-        。social-links {
+        
+        .social-links {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 15px;
-            justify-content: center;
-            margin-top: 20px;
+            margin-top: 30px;
         }
-        。social-link {
+        
+        .social-link {
+            background-color: rgba(100, 245, 245, 0.1);
+            color: #64f5f5;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 10px 15px;
-            background-color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #333;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            border: 1px solid rgba(100, 245, 245, 0.3);
         }
-        。social-link:hover {
+        
+        .social-link:hover {
+            background-color: rgba(100, 245, 245, 0.3);
             transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 15px rgba(100, 245, 245, 0.2);
         }
-        。social-link i {
+        
+        .social-icon {
+            margin-right: 8px;
             font-size: 1.2em;
+            width: 20px;
+            text-align: center;
         }
-        。divider {
-            height: 1px;
-            background-color: #ddd;
-            margin: 20px 0;
+        
+        .signature {
+            text-align: center;
+            margin-top: 30px;
+            color: #a1a1a1;
+            font-style: italic;
         }
     </style>
 </head>
-
 <body>
-    <div class="profile">
-        <div class="header">
-            <h1>Opakyn</h1>
+    <div class="container">
+        <h1>Opakyn</h1>
+        <div class="subtitle">Member of BA二うぼうAzureMiraclesCo.</div>
+        
+        <div class="info-section">
+            <div class="info-title">📍Basic📍</div>
+            <div class="info-content">
+                Age of 15 | Jiangsu,China | QQ:3943577124(欢迎加我)<br>
+            </div>
         </div>
         
-        <div class="bio">
-            <p>Jiangsu , China</p>
-            <p>OIer/Player of LOL and VALORANT</p>
-            <p>从属团队 BAこうぼう AzureMiraclesCo.</p>
-            <p>正在从事碧蓝档案社区搭建</p>
-            <p>电子竞技 & Electronic Dance Music & Phonk 爱好者</p>
-            <p>QQ:3943577124 欢迎加我</p>
-            <p>There for all.OvO</p>
+        <div class="info-section">
+            <div class="info-title">🎮Games🎮</div>
+            <div class="info-content">
+                LOL & VALORANT Player<br>
+                电子竞技爱好者 | 正在从事碧蓝档案社区搭建
+            </div>
         </div>
         
-        <div class="divider"></div>
+        <div class="info-section">
+            <div class="info-title">🎵INTJ🎵</div>
+            <div class="info-content">
+                Electronic Dance Music & Phonk Lover
+            </div>
+        </div>
         
         <div class="social-links">
             <a href="https://github.com/Opakyn" class="social-link" target="_blank">
-                <i class="fab fa-github"></i>
+                <span class="social-icon"><i class="fab fa-github"></i></span>
                 <span>GitHub</span>
             </a>
-            
             <a href="https://space.bilibili.com/494090183" class="social-link" target="_blank">
-                <i class="fab fa-bilibili"></i>
+                <span class="social-icon"><i class="fab fa-bilibili"></i></span>
                 <span>Bilibili</span>
             </a>
-            
             <a href="https://www.luogu.com.cn/user/1039691" class="social-link" target="_blank">
-                <i class="fas fa-book"></i>
+                <span class="social-icon"><i class="fas fa-code"></i></span>
                 <span>Luogu</span>
             </a>
-            
-            <a href="https://steamcommunity.com/profiles/76561199803605559/" class="social-link" target="_blank">
-                <i class="fab fa-steam"></i>
+            <a href="https://steamcommunity.com/id/76561199803605559" class="social-link" target="_blank">
+                <span class="social-icon"><i class="fab fa-steam"></i></span>
                 <span>Steam</span>
             </a>
-
             <a href="https://music.163.com/#/user/home?id=8868539428" class="social-link" target="_blank">
-                <i class="fas fa-music"></i>
-                <span>网抑云</span>
+                <span class="social-icon"><i class="fas fa-music"></i></span>
+                <span>CloudMusic</span>
             </a>
+        </div>
+        
+        <div class="signature">
+            "There for all.OvO"
         </div>
     </div>
 </body>
